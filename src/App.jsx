@@ -9,7 +9,7 @@ function App() {
     setCalculation(calculation += value);
   }
   function result(){
-    setCalculation(eval(calculation));
+    setCalculation((eval(calculation).toString()));
   }
   const backSpace = () => {
     setCalculation(calculation.slice(0, -1));
