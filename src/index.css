@@ -21,24 +21,36 @@ body{
 
 }
 .container .result{
-  border: 1px solid white;
   background-color: black;
   min-height: 50px;
-  display: flex;
   align-items: center;
+  display: flex;
   padding: 10px;
+  padding-right: 10px;
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
   color: white;
   border-radius: 15px;
   border: none;
-
 }
 .container .result div {
+  width: 95%;
   width: 335px;
   word-break: break-all;
 }
+.container .result .back-space{
+  width: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.container .result .back-space svg{
+  width: 30px;
+  height: 30px;
+}
+
 
 .container .buttons{
   border: none;

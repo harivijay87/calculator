@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { FaBackspace } from "react-icons/fa";
 
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
   function result(){
     setCalculation(eval(calculation));
   }
+  const backSpace = () => {
+    setCalculation(calculation.slice(0, -1));
+  }
 
   return (
     <div className="main">
@@ -17,6 +21,9 @@ function App() {
         <div className="result">
           <div>
             {calculation}
+          </div>
+          <div className="back-space" onClick={backSpace}>
+            <FaBackspace/>
           </div>
         </div>
         <div className="buttons">
